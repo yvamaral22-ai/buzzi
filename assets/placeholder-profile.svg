@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="900" viewBox="0 0 900 900" fill="none">
+  <rect width="900" height="900" rx="450" fill="#FFF8F3"/>
+  <circle cx="450" cy="450" r="386" fill="url(#paint0_linear)"/>
+  <circle cx="450" cy="370" r="132" fill="#FFE7DD"/>
+  <path d="M228 648C286.667 542 360.667 489 450 489C539.333 489 613.333 542 672 648V724H228V648Z" fill="#FFD6C7"/>
+  <text x="450" y="792" text-anchor="middle" fill="#152238" font-family="Arial, sans-serif" font-size="40" font-weight="700">FOTO DE PERFIL</text>
+  <defs>
+    <linearGradient id="paint0_linear" x1="119" y1="105" x2="779" y2="799" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#CDE5F1"/>
+      <stop offset="1" stop-color="#FFE0D4"/>
+    </linearGradient>
+  </defs>
+</svg>

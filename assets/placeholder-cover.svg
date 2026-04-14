@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200" fill="none">
+  <rect width="1200" height="1200" rx="96" fill="#FFF8F3"/>
+  <rect x="42" y="42" width="1116" height="1116" rx="64" fill="url(#paint0_linear)"/>
+  <circle cx="600" cy="516" r="212" fill="#FFFFFF" fill-opacity="0.72"/>
+  <circle cx="600" cy="516" r="128" fill="#FFE0D4"/>
+  <path d="M566 448L690 516L566 584V448Z" fill="#FF6B57"/>
+  <path d="M316 824H884" stroke="#152238" stroke-opacity="0.12" stroke-width="20" stroke-linecap="round"/>
+  <path d="M384 904H816" stroke="#152238" stroke-opacity="0.12" stroke-width="20" stroke-linecap="round"/>
+  <text x="600" y="840" text-anchor="middle" fill="#152238" font-family="Arial, sans-serif" font-size="52" font-weight="700">CAPA DA MUSICA</text>
+  <text x="600" y="918" text-anchor="middle" fill="#526178" font-family="Arial, sans-serif" font-size="32">troque por foto ou arte do pedido</text>
+  <defs>
+    <linearGradient id="paint0_linear" x1="126" y1="120" x2="1085" y2="1078" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFD9C6"/>
+      <stop offset="1" stop-color="#C9E3F2"/>
+    </linearGradient>
+  </defs>
+</svg>

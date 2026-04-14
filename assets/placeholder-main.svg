@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1200" viewBox="0 0 900 1200" fill="none">
+  <rect width="900" height="1200" rx="72" fill="#FFF8F3"/>
+  <rect x="36" y="36" width="828" height="1128" rx="48" fill="url(#paint0_linear)"/>
+  <rect x="110" y="140" width="680" height="730" rx="36" fill="#FFFFFF" fill-opacity="0.7"/>
+  <path d="M276 750C324 664.667 384.333 622 457 622C529.667 622 592.333 664.667 645 750V810H276V750Z" fill="#FFD8C9"/>
+  <circle cx="452" cy="478" r="126" fill="#FFE9E0"/>
+  <circle cx="452" cy="468" r="78" fill="#FFC6B5"/>
+  <path d="M196 951H706" stroke="#152238" stroke-opacity="0.12" stroke-width="18" stroke-linecap="round"/>
+  <path d="M196 1015H614" stroke="#152238" stroke-opacity="0.12" stroke-width="18" stroke-linecap="round"/>
+  <text x="450" y="960" text-anchor="middle" fill="#152238" font-family="Arial, sans-serif" font-size="54" font-weight="700">FOTO PRINCIPAL</text>
+  <text x="450" y="1035" text-anchor="middle" fill="#526178" font-family="Arial, sans-serif" font-size="34">substitua em assets</text>
+  <defs>
+    <linearGradient id="paint0_linear" x1="108" y1="92" x2="794" y2="1124" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFD9C5"/>
+      <stop offset="1" stop-color="#CDE6F1"/>
+    </linearGradient>
+  </defs>
+</svg>

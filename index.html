@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modelo Personalizavel</title>
+  <meta id="meta-description" name="description" content="Template personalizavel para sites-presente com fotos, musica, datas e mensagem especial.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+
+  <section id="intro-screen" class="intro-screen">
+    <div class="intro-panel">
+      <span id="intro-kicker" class="kicker"></span>
+      <h1 id="intro-title"></h1>
+      <p id="intro-subtitle" class="intro-subtitle"></p>
+      <button id="enter-button" class="button-primary" type="button"></button>
+      <p id="intro-note" class="intro-note"></p>
+    </div>
+  </section>
+
+  <main id="site-shell" class="site-shell is-hidden" aria-hidden="true">
+    <section class="hero-section reveal">
+      <div class="hero-copy">
+        <span id="hero-badge" class="kicker"></span>
+        <h2 id="hero-title" class="display-title"></h2>
+        <p id="hero-text" class="hero-text"></p>
+
+        <div class="hero-meta">
+          <article class="meta-card">
+            <span id="start-label" class="meta-label"></span>
+            <strong id="start-display" class="meta-value"></strong>
+          </article>
+          <article class="meta-card">
+            <span id="signature-label" class="meta-label"></span>
+            <strong id="signature-value" class="meta-value"></strong>
+          </article>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="photo-stack">
+          <figure class="photo-frame photo-frame-main">
+            <img id="hero-photo" alt="Foto principal do casal">
+          </figure>
+          <figure class="photo-frame photo-frame-secondary">
+            <img id="secondary-photo" alt="Foto complementar do casal">
+          </figure>
+          <div class="photo-chip">
+            <span class="chip-label">Modelo vivo</span>
+            <strong>troque tudo por `config.js`</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="player-section card-surface reveal">
+      <div class="section-heading">
+        <span class="kicker">Trilha da surpresa</span>
+        <h3 id="player-title"></h3>
+      </div>
+
+      <div class="player-layout">
+        <div class="track-card">
+          <img id="track-cover" class="track-cover" alt="Capa da trilha sonora">
+          <div class="track-copy">
+            <p id="track-name" class="track-name"></p>
+            <p id="track-artist" class="track-artist"></p>
+            <p id="track-caption" class="track-caption"></p>
+          </div>
+        </div>
+
+        <audio id="audio-player" preload="metadata"></audio>
+
+        <div class="player-controls">
+          <button id="play-button" class="button-primary player-button" type="button">
+            <span id="play-symbol" class="play-symbol">&gt;</span>
+            <span id="play-label">Ouvir</span>
+          </button>
+          <button id="restart-button" class="button-secondary" type="button">Reiniciar</button>
+        </div>
+
+        <button id="progress-wrap" class="progress-wrap" type="button" aria-label="Barra de progresso da musica">
+          <span class="progress-track">
+            <span id="progress-bar" class="progress-bar"></span>
+          </span>
+          <span class="time-row">
+            <span id="current-time">0:00</span>
+            <span id="total-time">0:00</span>
+          </span>
+        </button>
+
+        <p id="audio-status" class="audio-status"></p>
+      </div>
+    </section>
+
+    <section class="story-section reveal">
+      <div class="section-heading">
+        <span id="counter-kicker" class="kicker"></span>
+        <h3 id="counter-title"></h3>
+        <p id="counter-subtitle" class="section-text"></p>
+      </div>
+
+      <div class="story-intro card-surface">
+        <img id="profile-photo" class="profile-photo" alt="Foto de perfil do casal">
+        <div>
+          <p id="relationship-names" class="relationship-names"></p>
+          <p id="relationship-caption" class="relationship-caption"></p>
+        </div>
+      </div>
+
+      <div class="counter-grid">
+        <article class="counter-card">
+          <span id="years" class="counter-value">0</span>
+          <span id="label-years" class="counter-label">Anos</span>
+        </article>
+        <article class="counter-card">
+          <span id="months" class="counter-value">0</span>
+          <span id="label-months" class="counter-label">Meses</span>
+        </article>
+        <article class="counter-card">
+          <span id="days" class="counter-value">0</span>
+          <span id="label-days" class="counter-label">Dias</span>
+        </article>
+        <article class="counter-card">
+          <span id="hours" class="counter-value">0</span>
+          <span id="label-hours" class="counter-label">Horas</span>
+        </article>
+        <article class="counter-card">
+          <span id="minutes" class="counter-value">0</span>
+          <span id="label-minutes" class="counter-label">Minutos</span>
+        </article>
+        <article class="counter-card">
+          <span id="seconds" class="counter-value">0</span>
+          <span id="label-seconds" class="counter-label">Segundos</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="highlights-section reveal">
+      <div class="section-heading">
+        <span class="kicker">Detalhes do modelo</span>
+        <h3 id="highlights-title"></h3>
+        <p id="highlights-subtitle" class="section-text"></p>
+      </div>
+      <div id="highlight-grid" class="highlight-grid"></div>
+    </section>
+
+    <section class="gallery-section reveal">
+      <div class="section-heading">
+        <span class="kicker">Galeria</span>
+        <h3 id="gallery-title"></h3>
+        <p id="gallery-subtitle" class="section-text"></p>
+      </div>
+      <div id="gallery-grid" class="gallery-grid"></div>
+    </section>
+
+    <section class="message-section card-surface reveal">
+      <div class="section-heading">
+        <span id="message-kicker" class="kicker"></span>
+        <h3 id="message-title"></h3>
+      </div>
+
+      <blockquote id="message-body" class="message-body"></blockquote>
+      <p id="message-footer" class="message-footer"></p>
+    </section>
+
+    <footer class="site-footer reveal">
+      <p id="footer-note"></p>
+    </footer>
+  </main>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
