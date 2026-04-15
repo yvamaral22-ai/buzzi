@@ -74,7 +74,9 @@ button {
   z-index: 4;
   display: grid;
   place-items: center;
-  padding: 1.5rem;
+  min-height: 100dvh;
+  padding: clamp(0.9rem, 3vw, 2rem);
+  overflow-y: auto;
   background:
     linear-gradient(145deg, rgba(255, 245, 236, 0.92), rgba(255, 232, 217, 0.74)),
     linear-gradient(135deg, var(--bg-start), var(--bg-end));
@@ -87,8 +89,10 @@ button {
 }
 
 .intro-panel {
-  width: min(100%, 40rem);
-  padding: 2rem;
+  width: min(100%, 58rem);
+  max-width: calc(100vw - 2rem);
+  margin: auto;
+  padding: clamp(1.4rem, 3vw, 3rem);
   border: 1px solid rgba(255, 255, 255, 0.45);
   border-radius: clamp(1.6rem, 4vw, 2.4rem);
   background: rgba(255, 252, 249, 0.72);
@@ -122,7 +126,11 @@ h4 {
 }
 
 h1 {
-  font-size: clamp(2.8rem, 8vw, 5.6rem);
+  max-width: 11ch;
+  margin: 0 auto;
+  font-size: clamp(2.5rem, 6vw, 5.4rem);
+  line-height: 0.9;
+  text-wrap: balance;
 }
 
 .display-title {
@@ -165,12 +173,15 @@ h1 {
   align-items: center;
   justify-content: center;
   gap: 0.7rem;
-  margin-top: 1.75rem;
   padding: 1rem 1.5rem;
   background: linear-gradient(135deg, var(--accent), #ff8c66);
   color: white;
   font-weight: 800;
   box-shadow: 0 18px 36px rgba(255, 107, 87, 0.28);
+}
+
+#enter-button {
+  margin-top: 1.75rem;
 }
 
 .button-secondary {
@@ -197,9 +208,11 @@ h1 {
 .site-shell {
   position: relative;
   z-index: 1;
-  width: min(100% - 2rem, 72rem);
+  display: grid;
+  gap: clamp(1.2rem, 2vw, 2rem);
+  width: min(100% - clamp(1rem, 4vw, 3rem), 76rem);
   margin: 0 auto;
-  padding: 2rem 0 4rem;
+  padding: clamp(1rem, 3vw, 2rem) 0 clamp(2rem, 6vw, 4rem);
 }
 
 .site-shell.is-hidden {
@@ -209,16 +222,25 @@ h1 {
 .hero-section,
 .story-section,
 .site-footer {
-  margin-top: 1.4rem;
+  margin-top: 0;
 }
 
 .hero-section {
   display: grid;
   grid-template-columns: 1.05fr 0.95fr;
   align-items: center;
-  gap: 2rem;
-  min-height: 100vh;
-  padding: 2rem 0;
+  gap: clamp(1.5rem, 3vw, 3rem);
+  min-height: clamp(32rem, 82dvh, 46rem);
+  padding: clamp(0.5rem, 2vw, 1.5rem) 0;
+}
+
+.story-section {
+  display: grid;
+  gap: clamp(1rem, 1.8vw, 1.4rem);
+}
+
+.story-section .section-heading {
+  margin-bottom: 0;
 }
 
 .hero-text {
@@ -229,8 +251,8 @@ h1 {
 
 .hero-meta {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: clamp(0.85rem, 1.4vw, 1.25rem);
   margin-top: 2rem;
 }
 
@@ -338,7 +360,7 @@ h1 {
 }
 
 .card-surface {
-  padding: clamp(1.35rem, 3vw, 2rem);
+  padding: clamp(1.4rem, 3vw, 2.2rem);
   border-radius: var(--radius-xl);
   border: 1px solid rgba(255, 255, 255, 0.55);
   background: var(--surface);
@@ -361,7 +383,7 @@ h1 {
 
 .player-layout {
   display: grid;
-  gap: 1.2rem;
+  gap: clamp(1rem, 1.8vw, 1.4rem);
 }
 
 .track-card {
@@ -459,9 +481,9 @@ h1 {
 .story-intro {
   display: grid;
   grid-template-columns: 6rem 1fr;
-  gap: 1rem;
+  gap: clamp(1rem, 1.8vw, 1.35rem);
   align-items: center;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
 }
 
 .profile-photo {
@@ -485,13 +507,18 @@ h1 {
 }
 
 .counter-grid {
-  grid-template-columns: repeat(6, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(135px, 1fr));
+  gap: clamp(0.85rem, 1.5vw, 1.2rem);
 }
 
 .counter-card {
-  padding: 1.15rem 0.8rem;
+  min-height: 8.4rem;
+  padding: 1.25rem 0.9rem;
   border-radius: var(--radius-md);
   text-align: center;
+  display: grid;
+  align-content: center;
+  justify-items: center;
 }
 
 .counter-value {
@@ -544,13 +571,14 @@ h1 {
 @media (max-width: 980px) {
   .site-shell {
     width: min(100% - 1.4rem, 60rem);
-    padding-top: 1.2rem;
+    gap: 1.2rem;
+    padding-top: 1rem;
   }
 
   .hero-section {
     grid-template-columns: 1fr;
     min-height: auto;
-    padding-top: 5rem;
+    padding-top: 4rem;
   }
 
   .photo-stack {
@@ -568,13 +596,17 @@ h1 {
 
 @media (max-width: 720px) {
   .intro-panel {
-    padding: 1.6rem;
+    padding: 1.35rem;
   }
 
   .hero-meta,
   .track-card,
   .story-intro {
     grid-template-columns: 1fr;
+  }
+
+  .hero-meta {
+    margin-top: 1.35rem;
   }
 
   .photo-stack {
@@ -595,5 +627,23 @@ h1 {
 
   .counter-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-height: 760px) {
+  .intro-screen {
+    place-items: start center;
+  }
+
+  .intro-panel {
+    width: min(100%, 54rem);
+  }
+
+  h1 {
+    font-size: clamp(2.2rem, 5vw, 4.6rem);
+  }
+
+  #enter-button {
+    margin-top: 1.2rem;
   }
 }

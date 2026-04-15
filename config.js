@@ -67,8 +67,8 @@ const siteConfig = {
 
   message: {
     kicker: "Mensagem especial",
-    title: "Um texto para fechar o presente",
-    body: "Que a historia de voces continue sendo leve, bonita e cheia de momentos que valem a pena guardar.",
+    title: "E para nós",
+    body: "Que a nossa historia continue sendo leve, bonita e cheia de momentos que valem a pena guardar.",
     footer: "Com carinho"
   },
 
