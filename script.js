@@ -16,7 +16,6 @@ const audioStatus = document.getElementById("audio-status");
 const fallbackImages = {
   hero: "assets/placeholder-main.svg",
   square: "assets/placeholder-cover.svg",
-  gallery: "assets/placeholder-gallery.svg",
   profile: "assets/placeholder-profile.svg"
 };
 
@@ -27,8 +26,6 @@ document.addEventListener("DOMContentLoaded", () => {
   populateHero();
   populateRelationship();
   populateAudio();
-  populateHighlights();
-  populateGallery();
   populateMessage();
   populateFooter();
   setupIntroReveal();
@@ -79,7 +76,6 @@ function populateHero() {
   setText("signature-value", siteConfig.hero.signatureValue);
 
   setImage("hero-photo", siteConfig.media.heroPhoto, fallbackImages.hero);
-  setImage("secondary-photo", siteConfig.media.secondaryPhoto, fallbackImages.gallery);
 }
 
 function populateRelationship() {
@@ -150,49 +146,6 @@ function populateAudio() {
     audioStatus.textContent = "Nao foi possivel carregar o audio. Confira se o arquivo existe na pasta assets.";
     playButton.disabled = true;
     restartButton.disabled = true;
-  });
-}
-
-function populateHighlights() {
-  setText("highlights-title", siteConfig.highlights.title);
-  setText("highlights-subtitle", siteConfig.highlights.subtitle);
-
-  const highlightGrid = document.getElementById("highlight-grid");
-  highlightGrid.innerHTML = "";
-
-  siteConfig.highlights.items.forEach((item, index) => {
-    const card = document.createElement("article");
-    card.className = "highlight-card";
-    card.innerHTML = `
-      <span class="highlight-index">Bloco ${String(index + 1).padStart(2, "0")}</span>
-      <h4>${item.title}</h4>
-      <p>${item.text}</p>
-    `;
-    highlightGrid.appendChild(card);
-  });
-}
-
-function populateGallery() {
-  setText("gallery-title", siteConfig.gallery.title);
-  setText("gallery-subtitle", siteConfig.gallery.subtitle);
-
-  const galleryGrid = document.getElementById("gallery-grid");
-  galleryGrid.innerHTML = "";
-
-  siteConfig.media.galleryImages.forEach((imagePath, index) => {
-    const card = document.createElement("figure");
-    card.className = "gallery-card";
-
-    const image = document.createElement("img");
-    image.alt = `Foto da galeria ${index + 1}`;
-    image.src = imagePath;
-    image.onerror = () => {
-      image.onerror = null;
-      image.src = fallbackImages.gallery;
-    };
-
-    card.appendChild(image);
-    galleryGrid.appendChild(card);
   });
 }
 
