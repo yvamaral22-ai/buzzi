@@ -1,7 +1,7 @@
 const siteConfig = {
   meta: {
-    title: "Modelo Casal | Exemplo para encomenda",
-    description: "Template personalizavel para vender sites-presente com fotos, musica, datas, contagem em tempo real e mensagem especial."
+    title: "Nosso Amor Eterno",
+    description: "Um presente especial cheio de amor, memórias e momentos compartilhados."
   },
 
   theme: {
@@ -17,30 +17,30 @@ const siteConfig = {
   },
 
   intro: {
-    kicker: "Modelo Personalizavel Para Casal",
-    title: "Uma historia bonita merece um lugar so dela",
-    subtitle: "Esse exemplo foi pensado para o seu amigo e a namorada dele, com espaco para fotos, musica especial e a contagem do tempo juntos.",
-    buttonText: "Abrir surpresa",
-    note: "Voce troca fotos, musica, datas, frase e texto final em um unico arquivo."
+    kicker: "Amor Eterno",
+    title: "Nosso Amor é Eterno",
+    subtitle: "Uma jornada de amor que começou cheia de momentos especiais, músicas e memórias que guardamos no coração.",
+    buttonText: "Descobrir Nossa História",
+    note: "Clique para ver o presente que preparei para você."
   },
 
   hero: {
-    badge: "Modelo para casal",
-    title: "Um presente digital para guardar a historia dos dois.",
-    text: "Agora o template esta apontado para esse casal: basta colocar a foto em assets, adicionar o MP3 e completar os nomes para transformar a pagina em um presente pronto.",
+    badge: "Nosso Amor",
+    title: "Um Presente de Amor para Você",
+    text: "Cada dia ao seu lado é uma bênção. Este site guarda nossa história, nossas músicas e o tempo que passamos juntos.",
     startLabel: "Juntos desde",
-    signatureLabel: "Feito para",
-    signatureValue: "Buzzi e Sofi"
+    signatureLabel: "Com todo o meu amor,",
+    signatureValue: "Seu Amor"
   },
 
   relationship: {
-    kicker: "Tempo juntos",
-    title: "Cada instante conta nessa historia",
-    subtitle: "A contagem abaixo foi ajustada para 16 de janeiro de 2026, que marca o inicio da historia deles.",
-    names: "Buzzi e Sofi",
-    caption: "Use esse bloco para exibir o casal e deixar o contador com mais contexto emocional.",
+    kicker: "Nossa Jornada",
+    title: "Cada Segundo Conta",
+    subtitle: "Desde o dia que nos encontramos, cada momento é precioso. Aqui está a contagem do nosso amor.",
+    names: "Amor e Paixão",
+    caption: "Dois corações que se encontraram e nunca mais se separaram.",
     startDate: "2026-01-16T00:00:00",
-    displayDateLabel: "16 de janeiro de 2026",
+    displayDateLabel: "Dia do Nosso Encontro",
     labels: {
       years: "Anos",
       months: "Meses",
@@ -67,43 +67,43 @@ const siteConfig = {
 
   audio: {
     file: "assets/seja-pra-mim-maneva.mp3",
-    title: "Seja Pra Mim",
+    title: "Nossa Música",
     artist: "Maneva",
-    caption: "Deixe o MP3 com esse nome na pasta assets para o player tocar a musica escolhida por eles.",
+    caption: "A música que toca no nosso coração.",
     coverImage: "assets/casal-principal.jpg",
-    playerTitle: "A trilha que combina com a historia deles"
+    playerTitle: "A Trilha Sonora do Nosso Amor"
   },
 
   highlights: {
-    title: "Blocos que valorizam o pedido",
-    subtitle: "Esses cards deixam o modelo mais completo e ajudam o cliente a sentir que comprou algo realmente personalizado.",
+    title: "Momentos Especiais",
+    subtitle: "Lembranças que fazem nosso amor brilhar.",
     items: [
       {
-        title: "Abertura marcante",
-        text: "A primeira tela cria expectativa antes de revelar o site. Isso aumenta o impacto emocional da entrega."
+        title: "Primeiro Encontro",
+        text: "O dia em que nossos olhares se cruzaram e o mundo parou. Um momento mágico que mudou tudo."
       },
       {
-        title: "Tempo em tempo real",
-        text: "O contador reforca a historia do casal e costuma ser um dos elementos mais compartilhados."
+        title: "Promessas Eternas",
+        text: "Cada dia juntos é uma promessa renovada de amor, lealdade e felicidade compartilhada."
       },
       {
-        title: "Mensagem final",
-        text: "Feche a experiencia com um texto forte, carinhoso ou divertido, dependendo da personalidade do pedido."
+        title: "Amor Infinito",
+        text: "Nosso amor cresce a cada instante, como uma flor que nunca para de desabrochar."
       }
     ]
   },
 
   gallery: {
-    title: "Fotos que contam a relacao",
-    subtitle: "Enquanto voce nao adiciona outras imagens, o template usa a mesma foto do casal em toda a galeria."
+    title: "Nossas Memórias",
+    subtitle: "Fotos que capturam a essência do nosso amor."
   },
 
   message: {
-    kicker: "Mensagem especial",
-    title: "O texto que fecha o presente",
-    body: "Escreva aqui a mensagem principal do seu amigo para a namorada. A musica ja foi definida e a data inicial tambem, entao agora falta so completar o texto com a cara dos dois.",
-    footer: "Assinado por quem preparou a surpresa."
+    kicker: "Palavras do Coração",
+    title: "Minha Declaração de Amor",
+    body: "Querida, você é a luz da minha vida. Desde o primeiro dia, meu coração soube que você era a pessoa certa. Obrigado por cada sorriso, cada abraço, cada momento. Te amo mais do que palavras podem dizer.",
+    footer: "Com todo o meu amor, Seu Parceiro"
   },
 
-  footerNote: "Base pronta para comercializar: duplique a pasta do projeto, troque o conteudo em config.js e substitua os arquivos da pasta assets para cada cliente."
+  footerNote: "Criado com amor para celebrar nosso relacionamento."
 };
