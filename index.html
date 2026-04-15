@@ -13,9 +13,35 @@
 <body>
   <div class="ambient ambient-one" aria-hidden="true"></div>
   <div class="ambient ambient-two" aria-hidden="true"></div>
+  <div class="paw-trail paw-trail-top" aria-hidden="true">
+    <span class="paw-mark paw-mark-small"></span>
+    <span class="paw-mark paw-mark-medium"></span>
+    <span class="paw-mark paw-mark-small"></span>
+    <span class="paw-mark paw-mark-large"></span>
+  </div>
+  <div class="paw-trail paw-trail-bottom" aria-hidden="true">
+    <span class="paw-mark paw-mark-medium"></span>
+    <span class="paw-mark paw-mark-small"></span>
+    <span class="paw-mark paw-mark-large"></span>
+    <span class="paw-mark paw-mark-small"></span>
+  </div>
 
   <section id="intro-screen" class="intro-screen">
     <div class="intro-panel">
+      <div class="intro-decor intro-decor-left" aria-hidden="true">
+        <span class="badge-pill badge-pill-warm">
+          <span class="mini-icon mini-icon-paw"></span>
+          <span class="mini-icon mini-icon-heart"></span>
+        </span>
+        <span class="pet-sticker pet-sticker-heart"></span>
+      </div>
+      <div class="intro-decor intro-decor-right" aria-hidden="true">
+        <span class="pet-sticker pet-sticker-cross"></span>
+        <span class="badge-pill badge-pill-cool">
+          <span class="mini-icon mini-icon-fish"></span>
+          <span class="mini-icon mini-icon-cross"></span>
+        </span>
+      </div>
       <span id="intro-kicker" class="kicker"></span>
       <h1 id="intro-title"></h1>
       <p id="intro-subtitle" class="intro-subtitle"></p>
@@ -45,9 +71,29 @@
 
       <div class="hero-visual">
         <div class="photo-stack single-photo">
+          <div class="hero-decoration hero-decoration-left" aria-hidden="true">
+            <span class="pet-sticker pet-sticker-bone"></span>
+            <span class="hero-label">
+              <span class="mini-icon mini-icon-paw"></span>
+              <span class="mini-icon mini-icon-heart"></span>
+            </span>
+          </div>
+          <div class="hero-decoration hero-decoration-right" aria-hidden="true">
+            <span class="pet-sticker pet-sticker-fish"></span>
+            <span class="hero-label">
+              <span class="mini-icon mini-icon-fish"></span>
+              <span class="mini-icon mini-icon-cross"></span>
+            </span>
+          </div>
           <figure class="photo-frame photo-frame-main">
             <img id="hero-photo" alt="Foto principal do casal">
           </figure>
+          <div class="photo-chip pet-chip" aria-hidden="true">
+            <span class="pet-chip-spark"></span>
+            <span class="mini-icon mini-icon-cross"></span>
+            <span class="mini-icon mini-icon-paw"></span>
+            <span class="mini-icon mini-icon-bone"></span>
+          </div>
         </div>
       </div>
     </section>
@@ -56,6 +102,11 @@
       <div class="section-heading">
         <span class="kicker">Trilha da surpresa</span>
         <h3 id="player-title"></h3>
+      </div>
+      <div class="pet-divider" aria-hidden="true">
+        <span class="divider-dot"></span>
+        <span class="divider-bone"></span>
+        <span class="divider-dot"></span>
       </div>
 
       <div class="player-layout">
@@ -98,6 +149,16 @@
         <h3 id="counter-title"></h3>
         <p id="counter-subtitle" class="section-text"></p>
       </div>
+      <div class="section-ornaments" aria-hidden="true">
+        <span class="ornament-card">
+          <span class="mini-icon mini-icon-cross"></span>
+          <span class="mini-icon mini-icon-paw"></span>
+        </span>
+        <span class="ornament-card ornament-card-soft">
+          <span class="mini-icon mini-icon-fish"></span>
+          <span class="mini-icon mini-icon-heart"></span>
+        </span>
+      </div>
 
       <div class="story-intro card-surface">
         <img id="profile-photo" class="profile-photo" alt="Foto de perfil do casal">
@@ -139,6 +200,11 @@
       <div class="section-heading">
         <span id="message-kicker" class="kicker"></span>
         <h3 id="message-title"></h3>
+      </div>
+      <div class="message-decoration" aria-hidden="true">
+        <span class="message-decoration-line"></span>
+        <span class="pet-sticker pet-sticker-cross"></span>
+        <span class="message-decoration-line"></span>
       </div>
 
       <blockquote id="message-body" class="message-body"></blockquote>
