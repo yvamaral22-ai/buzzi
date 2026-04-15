@@ -1,7 +1,7 @@
 const siteConfig = {
   meta: {
-    title: "Nosso Amor Eterno",
-    description: "Um presente especial cheio de amor, memórias e momentos compartilhados."
+    title: "Buzzi e Sofi",
+    description: "Um presente especial com fotos, musica e a contagem do tempo juntos."
   },
 
   theme: {
@@ -17,30 +17,30 @@ const siteConfig = {
   },
 
   intro: {
-    kicker: "Amor Eterno",
-    title: "Nosso Amor é Eterno",
-    subtitle: "Uma jornada de amor que começou cheia de momentos especiais, músicas e memórias que guardamos no coração.",
-    buttonText: "Descobrir Nossa História",
-    note: "Clique para ver o presente que preparei para você."
+    kicker: "Buzzi e Sofi",
+    title: "Uma historia bonita merece um lugar so dela",
+    subtitle: "Uma surpresa feita para guardar lembrancas, musica especial e o tempo que voces estao construindo juntos.",
+    buttonText: "Abrir surpresa",
+    note: "Clique para ver o presente preparado com carinho."
   },
 
   hero: {
-    badge: "Nosso Amor",
-    title: "Um Presente de Amor para Você",
-    text: "Cada dia ao seu lado é uma bênção. Este site guarda nossa história, nossas músicas e o tempo que passamos juntos.",
+    badge: "Nosso amor",
+    title: "Um presente digital para guardar a historia dos dois.",
+    text: "Cada foto, cada detalhe e cada segundo juntos fazem parte de uma historia que merece ser lembrada com carinho.",
     startLabel: "Juntos desde",
-    signatureLabel: "Com todo o meu amor,",
-    signatureValue: "Seu Amor"
+    signatureLabel: "Feito para",
+    signatureValue: "Buzzi e Sofi"
   },
 
   relationship: {
-    kicker: "Nossa Jornada",
-    title: "Cada Segundo Conta",
-    subtitle: "Desde o dia que nos encontramos, cada momento é precioso. Aqui está a contagem do nosso amor.",
-    names: "Amor e Paixão",
-    caption: "Dois corações que se encontraram e nunca mais se separaram.",
+    kicker: "Tempo juntos",
+    title: "Cada segundo conta nessa historia",
+    subtitle: "A contagem abaixo comeca em 16 de janeiro de 2026, o inicio dessa historia especial.",
+    names: "Buzzi e Sofi",
+    caption: "Dois coracoes que encontraram um no outro um motivo a mais para sorrir.",
     startDate: "2026-01-16T00:00:00",
-    displayDateLabel: "Dia do Nosso Encontro",
+    displayDateLabel: "16 de janeiro de 2026",
     labels: {
       years: "Anos",
       months: "Meses",
@@ -67,43 +67,43 @@ const siteConfig = {
 
   audio: {
     file: "assets/seja-pra-mim-maneva.mp3",
-    title: "Nossa música",
+    title: "Seja Pra Mim",
     artist: "Maneva",
-    caption: "A música que toca no nosso coração.",
+    caption: "A musica escolhida para acompanhar essa historia.",
     coverImage: "assets/casal-principal.jpg",
-    playerTitle: "A Trilha Sonora do Nosso Amor"
+    playerTitle: "A trilha sonora do casal"
   },
 
   highlights: {
-    title: "Momentos Especiais",
-    subtitle: "Lembranças que fazem nosso amor brilhar.",
+    title: "Momentos especiais",
+    subtitle: "Detalhes simples que ajudam a contar uma historia bonita.",
     items: [
       {
-        title: "Primeiro Encontro",
-        text: "O dia em que nossos olhares se cruzaram e o mundo parou. Um momento mágico que mudou tudo."
+        title: "O comeco de tudo",
+        text: "Toda historia especial tem um dia que muda tudo. Aqui, esse dia ganhou um lugar para ser lembrado."
       },
       {
-        title: "Promessas Eternas",
-        text: "Cada dia juntos é uma promessa renovada de amor, lealdade e felicidade compartilhada."
+        title: "Tempo em tempo real",
+        text: "O contador mostra que cada mes, dia e segundo juntos importa quando existe carinho de verdade."
       },
       {
-        title: "Amor Infinito",
-        text: "Nosso amor cresce a cada instante, como uma flor que nunca para de desabrochar."
+        title: "Uma musica para marcar",
+        text: "Seja Pra Mim deixa o presente ainda mais pessoal e transforma a pagina em uma memoria viva."
       }
     ]
   },
 
   gallery: {
-    title: "Nossas Memórias",
-    subtitle: "Fotos que capturam a essência do nosso amor."
+    title: "Nossas memorias",
+    subtitle: "A mesma foto esta sendo usada em toda a galeria ate voce adicionar mais imagens do casal."
   },
 
   message: {
-    kicker: "Palavras do Coração",
-    title: "Minha Declaração de Amor",
-    body: "Querida, você é a luz da minha vida. Desde o primeiro dia, meu coração soube que você era a pessoa certa. Obrigado por cada sorriso, cada abraço, cada momento. Te amo mais do que palavras podem dizer.",
-    footer: "Com todo o meu amor, Seu Parceiro"
+    kicker: "Mensagem especial",
+    title: "Um texto para fechar o presente",
+    body: "Que a historia de voces continue sendo leve, bonita e cheia de momentos que valem a pena guardar. Que nunca faltem carinho, parceria e motivos para sorrir juntos.",
+    footer: "Com carinho"
   },
 
-  footerNote: "Criado com amor para celebrar nosso relacionamento."
+  footerNote: "Criado para celebrar a historia de Buzzi e Sofi."
 };
