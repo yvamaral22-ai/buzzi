@@ -67,7 +67,7 @@ const siteConfig = {
 
   audio: {
     file: "assets/seja-pra-mim-maneva.mp3",
-    title: "Nossa Música",
+    title: "Seja Pra Mim",
     artist: "Maneva",
     caption: "A música que toca no nosso coração.",
     coverImage: "assets/casal-principal.jpg",
