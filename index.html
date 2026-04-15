@@ -13,6 +13,49 @@
 <body>
   <div class="ambient ambient-one" aria-hidden="true"></div>
   <div class="ambient ambient-two" aria-hidden="true"></div>
+  <svg class="pet-symbols" aria-hidden="true" focusable="false">
+    <symbol id="pet-paw" viewBox="0 0 64 64">
+      <circle cx="19" cy="18" r="6"></circle>
+      <circle cx="31" cy="13" r="6"></circle>
+      <circle cx="43" cy="18" r="6"></circle>
+      <circle cx="50" cy="30" r="5.5"></circle>
+      <path d="M18 37c0-8 6-14 14-14s14 6 14 14c0 7-6 13-14 13s-14-6-14-13z"></path>
+    </symbol>
+    <symbol id="pet-cat" viewBox="0 0 64 64">
+      <path d="M19 24 23 11l9 8 9-8 4 13v11c0 10-6 18-13 18S19 45 19 35z" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"></path>
+      <circle cx="27" cy="33" r="2.3" fill="currentColor"></circle>
+      <circle cx="37" cy="33" r="2.3" fill="currentColor"></circle>
+      <path d="M30 40c1.5-2 2.5-2 4 0" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"></path>
+      <path d="M22 39h-8M22 43h-7M42 39h8M42 43h7" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"></path>
+    </symbol>
+    <symbol id="pet-dog" viewBox="0 0 64 64">
+      <path d="M22 22c2-5 6-8 10-8s8 3 10 8v12c0 7-4.5 12-10 12S22 41 22 34z" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"></path>
+      <path d="M22 24c-6 0-10 5-10 11 0 3 1 6 2.5 8.5 5.5-3.5 8.5-9 9-19.5" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"></path>
+      <path d="M42 24c6 0 10 5 10 11 0 3-1 6-2.5 8.5-5.5-3.5-8.5-9-9-19.5" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"></path>
+      <circle cx="27" cy="33" r="2.3" fill="currentColor"></circle>
+      <circle cx="37" cy="33" r="2.3" fill="currentColor"></circle>
+      <ellipse cx="32" cy="39.5" rx="4.2" ry="3.4" fill="currentColor"></ellipse>
+      <path d="M28 46c2 1.7 6 1.7 8 0" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round"></path>
+    </symbol>
+    <symbol id="pet-bone" viewBox="0 0 64 64">
+      <path d="M18 24a6 6 0 1 1 8.5-8.5l11 11h0a6 6 0 1 1 8.5 8.5h0l-11 11A6 6 0 1 1 26.5 57L15.5 46a6 6 0 1 1 0-8.5h0l11-11A6 6 0 1 1 18 24z" fill="none" stroke="currentColor" stroke-width="3.3" stroke-linecap="round" stroke-linejoin="round"></path>
+    </symbol>
+    <symbol id="pet-fish" viewBox="0 0 64 64">
+      <path d="M12 32c7-7.5 14-11 22-11 10 0 17.5 4.5 22 11-4.5 6.5-12 11-22 11-8 0-15-3.5-22-11z" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"></path>
+      <path d="M12 32 5 24v16z" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"></path>
+      <circle cx="39" cy="30" r="2.3" fill="currentColor"></circle>
+      <path d="M28 28c2 2 4 3 7 4" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"></path>
+    </symbol>
+    <symbol id="pet-cross" viewBox="0 0 64 64">
+      <path d="M32 16v32M16 32h32" fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="round"></path>
+    </symbol>
+    <symbol id="pet-heart" viewBox="0 0 64 64">
+      <path d="M32 52S15 42 15 28c0-7 5-12 12-12 4 0 7 2 9 5 2-3 5-5 9-5 7 0 12 5 12 12 0 14-17 24-25 24z"></path>
+    </symbol>
+    <symbol id="pet-spark" viewBox="0 0 64 64">
+      <path d="M32 10 36 28 54 32 36 36 32 54 28 36 10 32 28 28z"></path>
+    </symbol>
+  </svg>
   <div class="paw-trail paw-trail-top" aria-hidden="true">
     <span class="paw-mark paw-mark-small"></span>
     <span class="paw-mark paw-mark-medium"></span>
@@ -29,17 +72,23 @@
   <section id="intro-screen" class="intro-screen">
     <div class="intro-panel">
       <div class="intro-decor intro-decor-left" aria-hidden="true">
-        <span class="badge-pill badge-pill-warm">
-          <span class="mini-icon mini-icon-paw"></span>
-          <span class="mini-icon mini-icon-heart"></span>
+        <span class="pet-sticker pet-sticker-dog sticker-drift sticker-hero">
+          <svg class="pet-glyph pet-glyph-main"><use href="#pet-dog"></use></svg>
+          <svg class="pet-glyph pet-glyph-accent"><use href="#pet-heart"></use></svg>
         </span>
-        <span class="pet-sticker pet-sticker-heart"></span>
+        <span class="pet-sticker pet-sticker-paw sticker-lift">
+          <svg class="pet-glyph pet-glyph-main"><use href="#pet-paw"></use></svg>
+          <svg class="pet-glyph pet-glyph-accent"><use href="#pet-spark"></use></svg>
+        </span>
       </div>
       <div class="intro-decor intro-decor-right" aria-hidden="true">
-        <span class="pet-sticker pet-sticker-cross"></span>
-        <span class="badge-pill badge-pill-cool">
-          <span class="mini-icon mini-icon-fish"></span>
-          <span class="mini-icon mini-icon-cross"></span>
+        <span class="pet-sticker pet-sticker-cat sticker-sway sticker-hero">
+          <svg class="pet-glyph pet-glyph-main"><use href="#pet-cat"></use></svg>
+          <svg class="pet-glyph pet-glyph-accent"><use href="#pet-spark"></use></svg>
+        </span>
+        <span class="pet-sticker pet-sticker-care sticker-drift">
+          <svg class="pet-glyph pet-glyph-main"><use href="#pet-cross"></use></svg>
+          <svg class="pet-glyph pet-glyph-accent"><use href="#pet-fish"></use></svg>
         </span>
       </div>
       <span id="intro-kicker" class="kicker"></span>
@@ -72,27 +121,39 @@
       <div class="hero-visual">
         <div class="photo-stack single-photo">
           <div class="hero-decoration hero-decoration-left" aria-hidden="true">
-            <span class="pet-sticker pet-sticker-bone"></span>
-            <span class="hero-label">
-              <span class="mini-icon mini-icon-paw"></span>
-              <span class="mini-icon mini-icon-heart"></span>
+            <span class="pet-sticker pet-sticker-dog sticker-sway sticker-large">
+              <svg class="pet-glyph pet-glyph-main"><use href="#pet-dog"></use></svg>
+              <svg class="pet-glyph pet-glyph-accent"><use href="#pet-heart"></use></svg>
+            </span>
+            <span class="hero-label hero-label-heart">
+              <svg class="pet-glyph pet-glyph-mini"><use href="#pet-heart"></use></svg>
             </span>
           </div>
           <div class="hero-decoration hero-decoration-right" aria-hidden="true">
-            <span class="pet-sticker pet-sticker-fish"></span>
-            <span class="hero-label">
-              <span class="mini-icon mini-icon-fish"></span>
-              <span class="mini-icon mini-icon-cross"></span>
+            <span class="pet-sticker pet-sticker-cat sticker-drift sticker-large">
+              <svg class="pet-glyph pet-glyph-main"><use href="#pet-cat"></use></svg>
+              <svg class="pet-glyph pet-glyph-accent"><use href="#pet-fish"></use></svg>
+            </span>
+            <span class="hero-label hero-label-care">
+              <svg class="pet-glyph pet-glyph-mini"><use href="#pet-cross"></use></svg>
             </span>
           </div>
           <figure class="photo-frame photo-frame-main">
             <img id="hero-photo" alt="Foto principal do casal">
           </figure>
           <div class="photo-chip pet-chip" aria-hidden="true">
-            <span class="pet-chip-spark"></span>
-            <span class="mini-icon mini-icon-cross"></span>
-            <span class="mini-icon mini-icon-paw"></span>
-            <span class="mini-icon mini-icon-bone"></span>
+            <span class="pet-chip-orb pet-chip-orb-cross">
+              <svg class="pet-glyph pet-glyph-mini"><use href="#pet-cross"></use></svg>
+            </span>
+            <span class="pet-chip-orb pet-chip-orb-paw">
+              <svg class="pet-glyph pet-glyph-mini"><use href="#pet-paw"></use></svg>
+            </span>
+            <span class="pet-chip-orb pet-chip-orb-bone">
+              <svg class="pet-glyph pet-glyph-mini"><use href="#pet-bone"></use></svg>
+            </span>
+            <span class="pet-chip-orb pet-chip-orb-spark">
+              <svg class="pet-glyph pet-glyph-mini"><use href="#pet-spark"></use></svg>
+            </span>
           </div>
         </div>
       </div>
@@ -104,9 +165,17 @@
         <h3 id="player-title"></h3>
       </div>
       <div class="pet-divider" aria-hidden="true">
-        <span class="divider-dot"></span>
-        <span class="divider-bone"></span>
-        <span class="divider-dot"></span>
+        <span class="divider-badge divider-badge-paw">
+          <svg class="pet-glyph pet-glyph-mini"><use href="#pet-paw"></use></svg>
+        </span>
+        <span class="divider-line"></span>
+        <span class="divider-badge divider-badge-bone">
+          <svg class="pet-glyph pet-glyph-mini"><use href="#pet-bone"></use></svg>
+        </span>
+        <span class="divider-line"></span>
+        <span class="divider-badge divider-badge-fish">
+          <svg class="pet-glyph pet-glyph-mini"><use href="#pet-fish"></use></svg>
+        </span>
       </div>
 
       <div class="player-layout">
@@ -150,13 +219,19 @@
         <p id="counter-subtitle" class="section-text"></p>
       </div>
       <div class="section-ornaments" aria-hidden="true">
-        <span class="ornament-card">
-          <span class="mini-icon mini-icon-cross"></span>
-          <span class="mini-icon mini-icon-paw"></span>
+        <span class="ornament-card ornament-card-dog">
+          <svg class="pet-glyph pet-glyph-main"><use href="#pet-dog"></use></svg>
+          <svg class="pet-glyph pet-glyph-accent"><use href="#pet-heart"></use></svg>
         </span>
-        <span class="ornament-card ornament-card-soft">
-          <span class="mini-icon mini-icon-fish"></span>
-          <span class="mini-icon mini-icon-heart"></span>
+        <span class="ornament-link"></span>
+        <span class="ornament-card ornament-card-care">
+          <svg class="pet-glyph pet-glyph-main"><use href="#pet-cross"></use></svg>
+          <svg class="pet-glyph pet-glyph-accent"><use href="#pet-paw"></use></svg>
+        </span>
+        <span class="ornament-link"></span>
+        <span class="ornament-card ornament-card-cat">
+          <svg class="pet-glyph pet-glyph-main"><use href="#pet-cat"></use></svg>
+          <svg class="pet-glyph pet-glyph-accent"><use href="#pet-fish"></use></svg>
         </span>
       </div>
 
@@ -203,7 +278,10 @@
       </div>
       <div class="message-decoration" aria-hidden="true">
         <span class="message-decoration-line"></span>
-        <span class="pet-sticker pet-sticker-cross"></span>
+        <span class="pet-sticker pet-sticker-care sticker-sway">
+          <svg class="pet-glyph pet-glyph-main"><use href="#pet-heart"></use></svg>
+          <svg class="pet-glyph pet-glyph-accent"><use href="#pet-spark"></use></svg>
+        </span>
         <span class="message-decoration-line"></span>
       </div>
 
